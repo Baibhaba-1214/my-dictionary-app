@@ -1,0 +1,32 @@
+.container {
+  max-width: 1000px;
+  width: 95%;
+  margin: 50px auto;
+  padding: 40px;
+  background: #fdf6e3; /* Paper color */
+  border-radius: 5px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  
+  /* The "Book" Split */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  min-height: 500px;
+  border-left: 5px solid #dcd3b8; /* Spine shadow */
+  position: relative;
+}
+
+/* Optional: Subtle line for the center spine */
+.container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  bottom: 20px;
+  width: 2px;
+  background: #dcd3b8;
+}
+
+.page-left, .page-right {
+  padding: 10px;
+}
