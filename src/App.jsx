@@ -24,7 +24,7 @@ function App() {
     setError(null);
     try {
       // Use a standard model name
-      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+      const model = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
       const prompt = `Translate the word "${word}" from ${sourceLang} to ${targetLang}. 
       Provide a definition and one example sentence. 
       Return the output as a valid JSON object with these keys: "translatedText", "definition", "example".`;
